@@ -1,0 +1,6 @@
+framework module Pods_GraphTutorial {
+  umbrella header "Pods-GraphTutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
