@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AppCenterAnalytics
 
 class SignInViewController: UIViewController {
 
@@ -39,6 +40,7 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction func signIn() {
+        MSAnalytics.trackEvent("My custom event")
         spinner.start(container: self)
 
         // Do an interactive sign in
