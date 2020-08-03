@@ -1,4 +1,12 @@
 PODS:
+  - AppCenter (3.3.2):
+    - AppCenter/Analytics (= 3.3.2)
+    - AppCenter/Crashes (= 3.3.2)
+  - AppCenter/Analytics (3.3.2):
+    - AppCenter/Core
+  - AppCenter/Core (3.3.2)
+  - AppCenter/Crashes (3.3.2):
+    - AppCenter/Core
   - MSAL (1.0.2):
     - MSAL/app-lib (= 1.0.2)
   - MSAL/app-lib (1.0.2)
@@ -11,21 +19,24 @@ PODS:
     - MSGraphClientSDK/Authentication
 
 DEPENDENCIES:
+  - AppCenter
   - MSAL (~> 1.0.2)
   - MSGraphClientModels (~> 1.3.0)
   - MSGraphClientSDK (~> 1.0.0)
 
 SPEC REPOS:
   trunk:
+    - AppCenter
     - MSAL
     - MSGraphClientModels
     - MSGraphClientSDK
 
 SPEC CHECKSUMS:
+  AppCenter: aba7de06e4c2184f90dc84f7866bd07f82427d69
   MSAL: e63c1483f2f291717b94891ee8b201f6f91d6d41
   MSGraphClientModels: ffef6d0a1cdaa774e1689e38da35301cb74fc72a
   MSGraphClientSDK: ffc07a58a838e0702c7bf2a856367035d4a335d7
 
-PODFILE CHECKSUM: cacc2583cb7051eedbb19930f810829ea5efb8bd
+PODFILE CHECKSUM: d60a19686e80653a3e8c043a0b51503b42f17f50
 
 COCOAPODS: 1.9.1
